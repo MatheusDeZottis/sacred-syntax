@@ -1,0 +1,14 @@
+<div>
+    <h2>Registro de Celular</h2>
+    <button (click)="capturarIdCelular()">Capturar ID do Celular</button>
+    <p>ID Capturado: {{ idCelular }}</p>
+  
+    <button (click)="gravarRegistro()">Gravar Registro</button>
+  
+    <h3>Registros Salvos</h3>
+    <ul>
+      <li *ngFor="let registro of registros">
+        ID: {{ registro.idCelular }} - Data/Hora: {{ registro.dataHora }}
+      </li>
+    </ul>
+  </div>
