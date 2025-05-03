@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consomo de combustivel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>    
+
+<h1>O que abastecer e qual a economia do meu carro</h1>
+
+
+<h4>Calculo do consumo de kilometro rodado por litro de combustível consumido</h4>
+
+Kilometragem inicial do carro:ㅤㅤ<input id="input1"><br>
+Kilometragem atual do carro: ㅤ ㅤ<input id="input2"><br>
+Quantos litros foram abastecido?ㅤ<input id="input3"><br>
+(Obs.: Utilize o ponto "." para separar as casas decimais)<br><br>
+<button id="button1">Calcule o consumo de combustível por kilometro rodado</button><br><br><br>
+
+<h4>O que vale a pena abastecer?</h4>
+
+Coloque aqui o valor da gasolina na bomba:ㅤ <input id="input4"><br>
+Coloque aqui o valor do alcool na bomba: ㅤㅤ<input id="input5"><br>
+(Obs.: Utilize o ponto "." para separar as casas decimais)<br><br>
+<button id="button2">Calcula o que vale abastecer</button><br><br><br>
+</main>
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+        }
+            
+    function mostra(textoMostra) {
+            document.write(textoMostra);
+            pulaLinha();
+        }
+
+    function consumo(input1, input2, input3) {
+        
+
+        var kilometragemInicial = document.querySelector("#input1").value;
+        var kilometragemAtual = document.querySelector("#input2").value;
+        var litrosConsumidos = document.querySelector("#input3").value;
+        
+        alert((kilometragemAtual - kilometragemInicial) / litrosConsumidos);
+        }
+
+    function abastecer(input4, input5){
+    	var gasolina = document.querySelector("#input4").value;
+    	var alcool = document.querySelector("#input5").value;
+    	var diferenca = (alcool / gasolina) * 100;
+
+		if (diferenca >= 70) {
+			alert("Está compensando abastecer GASOLINA!");
+		}
+
+		if (diferenca < 70) {
+			alert("Está compensando abastecer ALCOOL!");
+		}
+
+		if (diferenca = isNaN) {
+			alert("Por favor, informe o preço do alcool e da gasolina.")
+		}
+
+    }
+
+
+    var button1 = document.querySelector("#button1");
+    var button2 = document.querySelector("#button2")
+
+    button1.onclick = consumo;
+    button2.onclick = abastecer
+    
+</script>
+
+
+</body>
+</html>
