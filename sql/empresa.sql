@@ -1,0 +1,1 @@
+-- mostre o nome de todas as empresas que tenham inscrições estadual começando com 0

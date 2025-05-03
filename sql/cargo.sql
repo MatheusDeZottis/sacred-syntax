@@ -1,0 +1,1 @@
+-- mostre o nome de todas que tenham o cargo de gerente
