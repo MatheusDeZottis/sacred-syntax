@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> javaScript </title>
+    <style>
+        body {
+            background: rgb(1, 1, 5);
+            color: white;
+            font: normal 18px arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Iniciando estudos DOM</h1>
+    <p>aqui vai o resultado </p>
+    <p> apredendo a usar o <strong> DOM</strong> em javaScript.</p>
+    <div id="msg">click aqui </div>
+    <div class="primeiro">click aqui minha class</div>
+    <div class="primeiro">click aqui minha class </div>
+    <div class="primeiro">click aqui minha class</div>
+
+
+
+    <script>
+        var elemento = document.getElementById('msg');
+        elemento.style.color = 'red';
+        elemento.style.fontSize = '20px';
+        // Adicione quantos estilos desejar
+
+        var elementos = document.getElementsByClassName('primeiro');
+        for (var i = 0; i < elementos.length; i++) {
+            // Define os estilos desejados para cada elemento
+            elementos[i].style.backgroundColor = 'blue';
+            elementos[i].style.color = 'white';
+            elementos[i].style.padding = '10px';
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

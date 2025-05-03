@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 02</title>
+</head>
+<body>
+    <!-- Escreva um programa javaScript que funcione como uma calculadora simples. O programa deve pedir ao usuário para inserir dois números usando o propomt(), realizar as 4 operações matematicas (adição, subtração, multiplicação é divisão ) com esses números e exibir o resultado usando alert -->
+
+    <script>
+        let numero01 = prompt("Insira o primeiro numero")
+        let numero02 = prompt("Insira o segundo numero")
+          
+        numero01 = parseFloat(numero01) 
+        numero02 = parseFloat(numero02)
+         
+        let soma = numero01 + numero02
+        let subtracao = numero01 - numero02
+        let multiplicacao = numero01 * numero02
+        let divisao = numero01 / numero02
+
+        window.alert(`a adição é ${soma}\n a subtração é ${subtracao}\n a multiplicação é ${multiplicacao}\n a divisão é ${divisao} `)
+
+        
+        
+
+
+
+
+    </script>
+</body>
+</html>

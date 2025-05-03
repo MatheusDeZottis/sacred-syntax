@@ -1,0 +1,25 @@
+@charset "UTF-08";
+
+div#area{
+    background: lawngreen;
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 323px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 435px;
+    height: 400px;
+    margin-top: 19px;
+    margin-bottom: auto;
+    font-size: 81px;
+    
+}
+
+div#area:hover {
+    background-color: #325bcd;
+    color: black;
+
+
+}

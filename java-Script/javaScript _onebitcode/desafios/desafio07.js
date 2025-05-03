@@ -1,0 +1,1 @@
+/* escreva um programa javaScript que peça ao usuario para inserir um número inteiro positivo é em seguida, calcule o fatorial desse número usando um loop for é exiba o resultado. */

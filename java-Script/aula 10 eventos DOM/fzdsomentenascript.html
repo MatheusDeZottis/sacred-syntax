@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos dom</title>
+    <style>
+        div#area {
+            background: #325bcd;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <div id="area">
+        interaja...
+     </div>
+     <script>
+        var a = document.getElementById('area');
+        
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseleave', sair);
+        
+        function clicar() {
+            a.innerText = 'clicou';
+            a.style.background = "red";
+            a.style.color = "black"; // Ajusta a cor do texto para preto
+        }
+
+        function entrar() {
+            a.innerText = 'entrou!';
+        }
+        
+        function sair() {
+            a.innerText = 'interaja...'; // Restaura o texto original
+            a.style.background = "#325bcd"; // Restaura a cor de fundo original
+            a.style.color = "white"; // Restaura a cor do texto para branco
+        }
+     </script>
+</body>
+</html>
