@@ -1,0 +1,10 @@
+<div>
+    <button (click)="registrar()">Registrar Acesso</button>
+  
+    <ul>
+      <li *ngFor="let reg of registros">
+        <strong>ID:</strong> {{ reg.id }} - <strong>Data/Hora:</strong> {{ reg.dataHora }}
+      </li>
+    </ul>
+  </div>
+  
